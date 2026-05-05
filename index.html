@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ── SEO ── -->
+  <title>KAYA Döner Himmelstadt – Frischer Döner direkt vom Spieß</title>
+  <meta name="description" content="KAYA Döner in Himmelstadt – frischer Döner, Dürüm, Falafel und mehr. Täglich frisch zubereitet. Hausgemachte Soßen. Rote Wiese 2, 97267 Himmelstadt. ☎ 01590 1254030">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://[DOMAIN-ERGÄNZEN]/">
+
+  <!-- ── Open Graph ── -->
+  <meta property="og:type"        content="website">
+  <meta property="og:locale"      content="de_DE">
+  <meta property="og:title"       content="KAYA Döner Himmelstadt – Frischer Döner direkt vom Spieß">
+  <meta property="og:description" content="KAYA Döner in Himmelstadt – frischer Döner, Dürüm, Falafel und mehr. Täglich frisch zubereitet. Hausgemachte Soßen.">
+  <meta property="og:url"         content="https://[DOMAIN-ERGÄNZEN]/">
+  <meta property="og:image"       content="https://[DOMAIN-ERGÄNZEN]/assets/images/og-image.jpg">
+  <meta property="og:site_name"   content="KAYA Döner Himmelstadt">
+
+  <!-- ── JSON-LD Schema ── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "KAYA Döner",
+    "image": "https://[DOMAIN-ERGÄNZEN]/assets/images/og-image.jpg",
+    "url": "https://[DOMAIN-ERGÄNZEN]/",
+    "telephone": "+4915901254030",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rote Wiese 2",
+      "addressLocality": "Himmelstadt",
+      "postalCode": "97267",
+      "addressRegion": "Bayern",
+      "addressCountry": "DE"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 49.8507,
+      "longitude": 9.8472
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "11:00",
+        "closes": "22:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday"],
+        "opens": "[ÖFFNUNGSZEIT ERGÄNZEN]",
+        "closes": "[ÖFFNUNGSZEIT ERGÄNZEN]"
+      }
+    ],
+    "servesCuisine": ["Türkisch", "Döner", "Falafel", "Vegetarisch"],
+    "priceRange": "€",
+    "hasMap": "https://www.google.com/maps/search/?api=1&query=Rote+Wiese+2,+97267+Himmelstadt",
+    "menu": "https://[DOMAIN-ERGÄNZEN]/#speisekarte",
+    "description": "KAYA Döner in Himmelstadt – täglich frischer Döner, Dürüm, Falafel und mehr. Hausgemachte Soßen, frisches Brot, halal-zertifiziertes Fleisch.",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "ratingCount": "50"
+    }
+  }
+  </script>
+
+  <!-- ── Fonts ── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ════════════════════════════════════
+     COOKIE BANNER
+════════════════════════════════════ -->
+<div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Datenschutzhinweis" hidden>
+  <div class="cookie-inner">
+    <p>
+      Diese Website nutzt <strong>Google Maps</strong>. Beim Laden der Karte werden Daten an Google LLC, USA, übertragen.
+      <a href="datenschutz.html">Datenschutzerklärung</a>
+    </p>
+    <div class="cookie-actions">
+      <button id="cookie-accept" class="btn btn-primary btn-sm">Akzeptieren</button>
+      <button id="cookie-reject" class="btn btn-secondary btn-sm">Ablehnen</button>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════
+     HEADER
+════════════════════════════════════ -->
+<header id="site-header" role="banner">
+  <div class="nav-wrap">
+
+    <a href="#start" class="nav-logo" aria-label="KAYA Döner – zur Startseite">
+      <img
+        src="Logo/Screenshot%202026-04-14%20000011.png"
+        alt="KAYA Döner Logo"
+        width="140" height="48"
+        loading="eager">
+    </a>
+
+    <nav aria-label="Hauptnavigation">
+      <ul class="nav-links" role="list">
+        <li><a href="#start"       aria-current="page">Start</a></li>
+        <li><a href="#speisekarte">Speisekarte</a></li>
+        <li><a href="#angebote">Angebote</a></li>
+        <li><a href="#ueber-uns">Über uns</a></li>
+        <li><a href="#standort">Standort</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+
+    <a href="tel:+4915901254030" class="btn btn-outline-green nav-cta" aria-label="Jetzt anrufen: 01590 1254030">
+      Jetzt bestellen
+    </a>
+
+    <button class="hamburger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span><span></span><span></span>
+    </button>
+
+  </div>
+
+  <!-- Mobile Nav Drawer -->
+  <div id="mobile-nav" class="mobile-nav" hidden role="navigation" aria-label="Mobile Navigation">
+    <ul role="list">
+      <li><a href="#start">Start</a></li>
+      <li><a href="#speisekarte">Speisekarte</a></li>
+      <li><a href="#angebote">Angebote</a></li>
+      <li><a href="#ueber-uns">Über uns</a></li>
+      <li><a href="#standort">Standort</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+    <a href="tel:+4915901254030" class="btn btn-primary btn-full" style="margin-top:1.25rem;">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .84h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      Jetzt anrufen
+    </a>
+  </div>
+</header>
+
+<main>
+
+<!-- ════════════════════════════════════
+     1. HERO
+════════════════════════════════════ -->
+<section id="start" class="s-hero" aria-labelledby="hero-h1">
+
+  <div class="hero-bg" aria-hidden="true">
+    <!-- Echtes Hero-Bild hier einfügen: assets/images/hero-bg.jpg -->
+    <img
+      src="assets/images/hero-bg.jpg"
+      alt=""
+      loading="eager"
+      fetchpriority="high"
+      onerror="this.parentElement.innerHTML='<div class=\'hero-placeholder\'></div>'">
+    <div class="hero-overlay"></div>
+  </div>
+
+  <div class="hero-content container">
+
+    <div class="hero-badge" aria-label="4,9 Sterne bei Google · Himmelstadt">
+      <span class="star" aria-hidden="true">★</span>
+      <span>4,9 bei Google</span>
+      <span class="sep" aria-hidden="true">·</span>
+      <span>Himmelstadt</span>
+    </div>
+
+    <h1 id="hero-h1">
+      Frischer Döner.<br>
+      <em class="text-green">Direkt vom Spieß.</em>
+    </h1>
+
+    <p class="hero-sub">
+      Hausgemachtes Brot &nbsp;·&nbsp; 100&nbsp;% frische Zutaten &nbsp;·&nbsp; in 5 Minuten serviert
+    </p>
+
+    <div class="hero-actions">
+      <a href="#speisekarte" class="btn btn-primary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 000 4h6a2 2 0 000-4M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+        Speisekarte ansehen
+      </a>
+      <a href="#angebote" class="btn btn-secondary">Aktuelle Angebote</a>
+      <a href="tel:+4915901254030" class="btn btn-ghost" aria-label="Anrufen: 01590 1254030">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .84h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        Jetzt anrufen
+      </a>
+    </div>
+
+    <div class="hero-trust" role="list" aria-label="Qualitätsmerkmale">
+      <div role="listitem"><span class="tick" aria-hidden="true">✓</span>Täglich frisch</div>
+      <div role="listitem"><span class="tick" aria-hidden="true">✓</span>Hausgemachte Soßen</div>
+      <div role="listitem"><span class="tick" aria-hidden="true">✓</span>Vegetarische Optionen</div>
+      <div role="listitem"><span class="tick" aria-hidden="true">✓</span>Abholung möglich</div>
+    </div>
+
+  </div>
+
+  <a href="#speisekarte" class="scroll-hint" aria-label="Zur Speisekarte scrollen">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+  </a>
+
+</section>
+
+<!-- ════════════════════════════════════
+     2. ZUBEREITUNG (statt Video)
+════════════════════════════════════ -->
+<section class="s-prep" aria-labelledby="prep-h2">
+  <div class="prep-inner">
+
+    <div class="prep-img-wrap fade-up">
+      <!-- Vorbereitungsbild einfügen: assets/images/prep-scene.jpg -->
+      <img
+        src="assets/images/prep-scene.jpg"
+        alt="Frische Zutaten werden bei KAYA Döner täglich handgemacht vorbereitet"
+        loading="lazy"
+        width="640" height="480"
+        onerror="this.outerHTML='<div class=\'prep-img-placeholder\'>🔪</div>'">
+      <div class="prep-img-label">
+        <div class="label-eyebrow">Die Zubereitung</div>
+        <div class="label-title">KAYA – Täglich handgemacht</div>
+      </div>
+    </div>
+
+    <div class="prep-text fade-up">
+      <span class="eyebrow">Vom Rohprodukt auf den Teller</span>
+      <h2 id="prep-h2">Handgemacht.<br>Jeden Tag neu.</h2>
+      <p>
+        Bei KAYA Döner beginnt jeder Tag mit dem Auspacken frischer Zutaten.
+        Kein Auftauen, kein Einfrieren – nur echte Qualität, die man schmeckt.
+        Unser Brot wird täglich frisch gebacken, unsere Soßen und Falafel
+        nach eigenen Rezepten hausgemacht.
+      </p>
+      <a href="#ueber-uns" class="btn btn-outline-green">Mehr über uns</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════════════════════════════════
+     3. SPEISEKARTE
+════════════════════════════════════ -->
+<section id="speisekarte" class="s-menu" aria-labelledby="menu-h2">
+  <div class="container">
+
+    <div class="section-head fade-up">
+      <span class="eyebrow">Wähle deinen Favoriten</span>
+      <h2 id="menu-h2">Unsere Speisekarte</h2>
+    </div>
+
+    <!-- Tab Navigation -->
+    <div class="tab-nav" role="tablist" aria-label="Speisekarte Kategorien">
+      <button role="tab" id="tab-doner"     aria-controls="panel-doner"     aria-selected="true"  tabindex="0"  class="tab active">Döner &amp; Dürüm</button>
+      <button role="tab" id="tab-teller"    aria-controls="panel-teller"    aria-selected="false" tabindex="-1" class="tab">Teller &amp; Boxen</button>
+      <button role="tab" id="tab-veggi"     aria-controls="panel-veggi"     aria-selected="false" tabindex="-1" class="tab">Vegetarisch</button>
+      <button role="tab" id="tab-burger"    aria-controls="panel-burger"    aria-selected="false" tabindex="-1" class="tab">Burger &amp; Hähnchen</button>
+      <button role="tab" id="tab-beilagen"  aria-controls="panel-beilagen"  aria-selected="false" tabindex="-1" class="tab">Beilagen</button>
+      <button role="tab" id="tab-getraenke" aria-controls="panel-getraenke" aria-selected="false" tabindex="-1" class="tab">Getränke</button>
+      <button role="tab" id="tab-sossen"    aria-controls="panel-sossen"    aria-selected="false" tabindex="-1" class="tab">Soßen</button>
+    </div>
+
+    <!-- Panel: Döner & Dürüm -->
+    <div role="tabpanel" id="panel-doner" aria-labelledby="tab-doner" class="tab-panel active">
+      <div class="menu-grid">
+
+        <article class="menu-card fade-up">
+          <div class="menu-card-img">
+            <!-- Bild: assets/images/menu-doner.jpg -->
+            <img src="assets/images/menu-doner.jpg" alt="Kaya klassik Döner im Fladenbrot" loading="lazy"
+              onerror="this.outerHTML='<div class=\'placeholder-img\'>🥙</div>'">
+          </div>
+          <div class="menu-card-body">
+            <h3>Kaya klassik Döner</h3>
+            <p>Im Fladenbrot mit frischem Salat, Tomaten, Zwiebeln und Soße nach Wahl</p>
+            <div class="menu-card-footer">
+              <span class="price">7,50 €</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card fade-up">
+          <div class="menu-card-img">
+            <!-- Bild: assets/images/menu-duerum.jpg -->
+            <img src="assets/images/menu-duerum.jpg" alt="Dürüm – Döner im Wrap" loading="lazy"
+              onerror="this.outerHTML='<div class=\'placeholder-img\'>🌯</div>'">
+          </div>
+          <div class="menu-card-body">
+            <h3>Dürüm</h3>
+            <p>Zart gerolltes Fladenbrot mit Drehspieß-Fleisch, frischem Gemüse und Soße</p>
+            <div class="menu-card-footer">
+              <span class="price">[PREIS ERGÄNZEN]</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card fade-up">
+          <div class="placeholder-img" aria-hidden="true">🫓</div>
+          <div class="menu-card-body">
+            <h3>Lahmacun</h3>
+            <p>Dünner türkischer Flammkuchen, mit frischem Salat und Soße gerollt</p>
+            <div class="menu-card-footer">
+              <span class="price">[PREIS ERGÄNZEN]</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card fade-up">
+          <div class="placeholder-img" aria-hidden="true">🥙</div>
+          <div class="menu-card-body">
+            <h3>Falafel Döner</h3>
+            <p>Knusprige hausgemachte Falafel im Fladenbrot mit frischem Gemüse und Soße</p>
+            <div class="menu-card-footer">
+              <span class="price">[PREIS ERGÄNZEN]</span>
+              <span class="badge-veg">🌿 Vegetarisch</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card fade-up">
+          <div class="placeholder-img" aria-hidden="true">🌯</div>
+          <div class="menu-card-body">
+            <h3>Falafel Dürüm</h3>
+            <p>Hausgemachte Falafel im Dürüm-Wrap mit Salat und Soße nach Wahl</p>
+            <div class="menu-card-footer">
+              <span class="price">[PREIS ERGÄNZEN]</span>
+              <span class="badge-veg">🌿 Vegetarisch</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card fade-up">
+          <div class="placeholder-img" aria-hidden="true">🥙</div>
+          <div class="menu-card-body">
+            <h3>Gemüse Döner</h3>
+            <p>Frisches Grillgemüse im Fladenbrot mit hausgemachter Soße und Salat</p>
+            <div class="menu-card-footer">
+              <span class="price">[PREIS ERGÄNZEN]</span>
+              <span class="badge-veg">🌿 Vegetarisch</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card fade-up">
+          <div class="placeholder-img" aria-hidden="true">🌯</div>
+          <div class="menu-card-body">
+            <h3>Gemüse Dürüm</h3>
+            <p>Grillgemüse im Dürüm-Wrap – leicht und vegetarisch</p>
+            <div class="menu-card-footer">
+              <span class="price">[PREIS ERGÄNZEN]</span>
+              <span class="badge-veg">🌿 Vegetarisch</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- Panel: Teller & Boxen -->
+    <div role="tabpanel" id="panel-teller" aria-labelledby="tab-teller" class="tab-panel" hidden>
+      <div class="menu-grid">
+
+        <article class="menu-card fade-up">
+          <div class="placeholder-img" aria-hidden="true">🍽️</div>
+          <div class="menu-card-body">
+            <h3>Drehspießteller</h3>
+            <p>Drehspieß-Fleisch auf dem Teller mit Salat, Soße nach Wahl und Brot</p>
+            <div class="menu-card-footer">
+              <span class="price">[PREIS ERGÄNZEN]</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card fade-up">
+          <div class="placeholder-img" aria-hidden="true">📦</div>
+          <div class="menu-card-body">
+            <h3>Drehspießbox</h3>
+            <p>Drehspieß-Fleisch in der praktischen To-go-Box mit Beilage und Soße</p>
+            <div class="menu-card-footer">
+              <span class="price">[PREIS ERGÄNZEN]</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card fade-up">
+          <div class="placeholder-img" aria-hidden="true">🍽️</div>
+          <div class="menu-card-body">
+            <h3>Mix-Teller</h3>
+            <p>Eine Auswahl verschiedener Spezialitäten auf einem Teller</p>
+            <div class="menu-card-footer">
+              <span class="price">[PREIS ERGÄNZEN]</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card fade-up">
+          <div class="placeholder-img" aria-hidden="true">🫓</div>
+          <div class="menu-card-body">
+            <h3>Falafelteller</h3>
+            <p>Hausgemachte Falafel auf dem Teller mit Salat und Soße</p>
+            <div class="menu-card-footer">
+              <span class="price">[PREIS ERGÄNZEN]</span>
+              <span class="badge-veg">🌿 Vegetarisch</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- Panel: Vegetarisch -->
+    <div role="tabpanel" id="panel-veggi" aria-labelledby="tab-veggi" class="tab-panel" hidden>
+      <div class="menu-grid">
+
+        <article class="menu-card fade-up">
+          <div class="placeholder-img" aria-hidden="true">🧀</div>
+          <div class="menu-card-body">
+            <h3>Halloumi</h3>
+            <p>Gegrillter Halloumi-Käse im Fladenbrot oder auf dem Teller mit frischem Salat</p>
+            <div class="menu-card-footer">
+              <span class="price">[PREIS ERGÄNZEN]</span>
+              <span class="badge-veg">🌿 Vegetarisch</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card fade-up">
+          <div class="placeholder-img" aria-hidden="true">🫓</div>
+          <div class="menu-card-body">
+            <h3>Falafel Döner</h3>
+            <p>Knusprige hausgemachte Falafel im Fladenbrot mit Gemüse und Soße</p>
+            <div class="menu-card-footer">
+              <span class="price">[PREIS ERGÄNZEN]</span>
+              <span class="badge-veg">🌿 Vegetarisch</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card fade-up">
+          <div class="placeholder-img" aria-hidden="true">🥙</div>
+          <div class="menu-card-body">
+            <h3>Gemüse Döner</h3>
+            <p>Frisches Grillgemüse im Fladenbrot mit hausgemachter Soße</p>
+            <div class="menu-card-footer">
+              <span class="price">[PREIS ERGÄNZEN]</span>
+              <span class="badge-veg">🌿 Vegetarisch</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card fade-up">
+          <div class="placeholder-img" aria-hidden="true">🍽️</div>
+          <div class="menu-card-body">
+            <h3>Falafelteller</h3>
+            <p>Hausgemachte Falafel auf dem Teller mit Salat und Soße – frisch und sättigend</p>
+            <div class="menu-card-footer">
+              <span class="price">[PREIS ERGÄNZEN]</span>
+              <span class="badge-veg">🌿 Vegetarisch</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- Panel: Burger & Hähnchen -->
+    <div role="tabpanel" id="panel-burger" aria-labelledby="tab-burger" class="tab-panel" hidden>
+      <div class="menu-grid">
+
+        <article class="menu-card fade-up">
+          <div class="placeholder-img" aria-hidden="true">🍔</div>
+          <div class="menu-card-body">
+            <h3>Hamburger</h3>
+            <p>Saftiger Burger mit frischen Zutaten und Soße nach Wahl</p>
+            <div class="menu-card-footer">
+              <span class="price">[PREIS ERGÄNZEN]</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card fade-up">
+          <div class="placeholder-img" aria-hidden="true">🍔</div>
+          <div class="menu-card-body">
+            <h3>Cheeseburger</h3>
+            <p>Klassischer Cheeseburger mit Käse, Salat und hausgemachter Soße</p>
+            <div class="menu-card-footer">
+              <span class="price">[PREIS ERGÄNZEN]</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card fade-up">
+          <div class="placeholder-img" aria-hidden="true">🍗</div>
+          <div class="menu-card-body">
+            <h3>Halbes Hähnchen</h3>
+            <p>Frisch gegrillt – innen saftig, außen knusprig</p>
+            <div class="menu-card-footer">
+              <span class="price">[PREIS ERGÄNZEN]</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card fade-up">
+          <div class="placeholder-img" aria-hidden="true">🍗</div>
+          <div class="menu-card-body">
+            <h3>Ganzes Hähnchen</h3>
+            <p>Vollständig gegrillt – ideal zum Teilen oder für den großen Hunger</p>
+            <div class="menu-card-footer">
+              <span class="price">[PREIS ERGÄNZEN]</span>
+              <span class="badge-deal">Mi: 10,00 €</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card fade-up">
+          <div class="placeholder-img" aria-hidden="true">🍗</div>
+          <div class="menu-card-body">
+            <h3>Chicken Nuggets</h3>
+            <p>Knusprige Chicken Nuggets – als Snack oder Beilage</p>
+            <div class="menu-card-footer">
+              <span class="price">[PREIS ERGÄNZEN]</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- Panel: Beilagen -->
+    <div role="tabpanel" id="panel-beilagen" aria-labelledby="tab-beilagen" class="tab-panel" hidden>
+      <div class="menu-grid">
+
+        <article class="menu-card fade-up">
+          <div class="placeholder-img" aria-hidden="true">🍟</div>
+          <div class="menu-card-body">
+            <h3>Pommes</h3>
+            <p>Knusprige Pommes Frites, frisch zubereitet</p>
+            <div class="menu-card-footer">
+              <span class="price">[PREIS ERGÄNZEN]</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card fade-up">
+          <div class="placeholder-img" aria-hidden="true">🍮</div>
+          <div class="menu-card-body">
+            <h3>Baklava</h3>
+            <p>Süßes orientalisches Gebäck mit Nüssen und Honig – der perfekte Abschluss</p>
+            <div class="menu-card-footer">
+              <span class="price">[PREIS ERGÄNZEN]</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- Panel: Getränke -->
+    <div role="tabpanel" id="panel-getraenke" aria-labelledby="tab-getraenke" class="tab-panel" hidden>
+      <div class="menu-grid">
+        <article class="menu-card compact fade-up">
+          <div class="menu-card-body">
+            <h3>Cola</h3>
+            <div class="menu-card-footer"><span class="price">[PREIS ERGÄNZEN]</span></div>
+          </div>
+        </article>
+        <article class="menu-card compact fade-up">
+          <div class="menu-card-body">
+            <h3>Fanta</h3>
+            <div class="menu-card-footer"><span class="price">[PREIS ERGÄNZEN]</span></div>
+          </div>
+        </article>
+        <article class="menu-card compact fade-up">
+          <div class="menu-card-body">
+            <h3>Sprite</h3>
+            <div class="menu-card-footer"><span class="price">[PREIS ERGÄNZEN]</span></div>
+          </div>
+        </article>
+        <article class="menu-card compact fade-up">
+          <div class="menu-card-body">
+            <h3>Wasser</h3>
+            <div class="menu-card-footer"><span class="price">[PREIS ERGÄNZEN]</span></div>
+          </div>
+        </article>
+        <article class="menu-card compact fade-up">
+          <div class="menu-card-body">
+            <h3>Ayran</h3>
+            <div class="menu-card-footer"><span class="price">[PREIS ERGÄNZEN]</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- Panel: Soßen -->
+    <div role="tabpanel" id="panel-sossen" aria-labelledby="tab-sossen" class="tab-panel" hidden>
+      <div class="sossen-grid">
+        <div class="sosse-item fade-up"><span class="sosse-dot" aria-hidden="true"></span>Knoblauchsoße</div>
+        <div class="sosse-item fade-up"><span class="sosse-dot" aria-hidden="true"></span>Kräutersoße</div>
+        <div class="sosse-item fade-up"><span class="sosse-dot" aria-hidden="true"></span>Scharfe Soße</div>
+        <div class="sosse-item fade-up"><span class="sosse-dot" aria-hidden="true"></span>Cocktailsoße</div>
+        <div class="sosse-item fade-up"><span class="sosse-dot" aria-hidden="true"></span>Currysoße</div>
+      </div>
+      <p class="sosse-note">Eine Soße nach Wahl inklusive. Weitere Soßen gegen Aufpreis.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════════════════════════════════
+     4. WOCHENANGEBOTE
+════════════════════════════════════ -->
+<section id="angebote" class="s-deals" aria-labelledby="deals-h2">
+  <div class="container">
+
+    <div class="section-head fade-up">
+      <span class="eyebrow">Jeden Wochentag ein Highlight</span>
+      <h2 id="deals-h2">Wochenangebote</h2>
+    </div>
+
+    <div class="deals-grid">
+
+      <article class="deal-card fade-up" aria-label="Dienstags-Angebot">
+        <div class="deal-day">Dienstag</div>
+        <div class="deal-name">Döner</div>
+        <div class="deal-price">5,00 €</div>
+        <div class="deal-tag">Tagesangebot</div>
+      </article>
+
+      <article class="deal-card deal-featured fade-up" aria-label="Mittwochs-Angebot">
+        <div class="deal-day">Mittwoch</div>
+        <div class="deal-name">Ganzes Hähnchen</div>
+        <div class="deal-price">10,00 €</div>
+        <div class="deal-tag">Tagesangebot</div>
+      </article>
+
+      <article class="deal-card fade-up" aria-label="Freitags-Angebote">
+        <div class="deal-day">Freitag</div>
+        <div class="deal-combo">
+          <div class="deal-combo-row">
+            <span class="deal-name">Steak Döner Tasche</span>
+            <span class="deal-price">9,80 €</span>
+          </div>
+          <div class="deal-combo-or">oder</div>
+          <div class="deal-combo-row">
+            <span class="deal-name">Dürüm</span>
+            <span class="deal-price">10,80 €</span>
+          </div>
+        </div>
+        <div class="deal-tag">Freitags-Special</div>
+      </article>
+
+    </div>
+
+    <p class="deals-disclaimer">* Angebote gültig solange der Vorrat reicht. Nicht kombinierbar mit anderen Aktionen.</p>
+
+  </div>
+</section>
+
+<!-- ════════════════════════════════════
+     5. ÜBER UNS
+════════════════════════════════════ -->
+<section id="ueber-uns" class="s-about" aria-labelledby="about-h2">
+  <div class="container">
+    <div class="about-grid">
+
+      <div class="about-images fade-up">
+        <div class="about-img-main">
+          <!-- Bild: assets/images/about-main.jpg  (z.B. Ofen oder Küche) -->
+          <img
+            src="assets/images/about-main.jpg"
+            alt="Küche und Zubereitung bei KAYA Döner Himmelstadt"
+            loading="lazy" width="640" height="400"
+            onerror="this.outerHTML='<div class=\'prep-img-placeholder\' style=\'aspect-ratio:16/10\'>🔥</div>'">
+        </div>
+        <div class="about-img-secondary">
+          <!-- Bild: assets/images/about-salad.jpg  (z.B. Salat / Zutaten) -->
+          <img
+            src="assets/images/about-salad.jpg"
+            alt="Frischer Salat und Gemüse bei KAYA Döner"
+            loading="lazy" width="360" height="270"
+            onerror="this.outerHTML='<div class=\'about-img-placeholder\'>🥗</div>'">
+        </div>
+        <div class="about-img-secondary">
+          <!-- Bild: assets/images/about-prep.jpg  (z.B. Gemüseschneiden) -->
+          <img
+            src="assets/images/about-prep.jpg"
+            alt="Frische Zutaten werden täglich bei KAYA Döner vorbereitet"
+            loading="lazy" width="360" height="270"
+            onerror="this.outerHTML='<div class=\'about-img-placeholder\'>🥒</div>'">
+        </div>
+      </div>
+
+      <div class="about-text fade-up">
+        <span class="eyebrow">Warum KAYA Döner?</span>
+        <h2 id="about-h2">Handwerk, das man schmeckt.</h2>
+
+        <ul class="about-points">
+          <li>
+            <span class="point-icon" aria-hidden="true">✓</span>
+            <div>
+              <strong>Täglich frisches Brot</strong>
+              <p>Unser Fladenbrot wird jeden Tag frisch gebacken – kein Brot von gestern.</p>
+            </div>
+          </li>
+          <li>
+            <span class="point-icon" aria-hidden="true">✓</span>
+            <div>
+              <strong>Hochwertiges Fleisch</strong>
+              <p>Ausschließlich hochwertiges, halal-zertifiziertes Fleisch – frisch vom echten Drehspieß.</p>
+            </div>
+          </li>
+          <li>
+            <span class="point-icon" aria-hidden="true">✓</span>
+            <div>
+              <strong>Lokales Gemüse</strong>
+              <p>Frisches, knackiges Gemüse – täglich bezogen und täglich frisch verarbeitet.</p>
+            </div>
+          </li>
+          <li>
+            <span class="point-icon" aria-hidden="true">✓</span>
+            <div>
+              <strong>Hausgemachte Soßen &amp; Falafel</strong>
+              <p>Alle Soßen und unsere Falafel werden nach eigenen Rezepten selbst zubereitet.</p>
+            </div>
+          </li>
+        </ul>
+
+        <div class="about-actions">
+          <a href="tel:+4915901254030" class="btn btn-primary">Jetzt anrufen</a>
+          <a href="#standort" class="btn btn-secondary">Zu uns finden</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════
+     6. BEWERTUNGEN
+════════════════════════════════════ -->
+<section id="bewertungen" class="s-reviews" aria-labelledby="reviews-h2">
+  <div class="container">
+
+    <div class="section-head fade-up">
+      <h2 id="reviews-h2">Was unsere Gäste sagen</h2>
+      <div class="reviews-rating">
+        <span class="stars" aria-label="4 Komma 9 von 5 Sternen">★★★★★</span>
+        <span>4,9 auf Google Reviews</span>
+      </div>
+    </div>
+
+    <div class="reviews-grid">
+
+      <article class="review-card fade-up">
+        <div class="review-stars" aria-label="5 Sterne">★★★★★</div>
+        <blockquote>
+          <p>„Super lecker und immer frisch zubereitet. Bester Döner in der Umgebung – komme regelmäßig wieder."</p>
+        </blockquote>
+        <footer>
+          <span class="reviewer-name">Google Nutzer</span>
+          <span class="reviewer-source">Google Rezension</span>
+        </footer>
+      </article>
+
+      <article class="review-card fade-up">
+        <div class="review-stars" aria-label="5 Sterne">★★★★★</div>
+        <blockquote>
+          <p>„Freundlicher Service und schnelle Zubereitung. Man merkt, dass hier auf Qualität geachtet wird."</p>
+        </blockquote>
+        <footer>
+          <span class="reviewer-name">Google Nutzer</span>
+          <span class="reviewer-source">Google Rezension</span>
+        </footer>
+      </article>
+
+      <article class="review-card fade-up">
+        <div class="review-stars" aria-label="5 Sterne">★★★★★</div>
+        <blockquote>
+          <p>„Die hausgemachten Soßen sind unschlagbar. Frisches Brot, saftiges Fleisch – einfach top."</p>
+        </blockquote>
+        <footer>
+          <span class="reviewer-name">Google Nutzer</span>
+          <span class="reviewer-source">Google Rezension</span>
+        </footer>
+      </article>
+
+    </div>
+
+    <div class="reviews-cta fade-up">
+      <a href="https://www.google.com/maps/search/?api=1&query=KAYA+Döner+Himmelstadt"
+         target="_blank" rel="noopener noreferrer"
+         class="btn btn-outline-green"
+         aria-label="Alle Google Bewertungen für KAYA Döner anzeigen">
+        Alle Bewertungen auf Google ansehen
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════════════════════════════════
+     7. STANDORT & KONTAKT
+════════════════════════════════════ -->
+<section id="standort" class="s-location" aria-labelledby="location-h2">
+  <div class="container">
+
+    <div class="section-head fade-up">
+      <h2 id="location-h2">Besuche uns</h2>
+      <p>Wir freuen uns darauf, dich in unserem Laden in Himmelstadt begrüßen zu dürfen.</p>
+    </div>
+
+    <div class="location-grid">
+
+      <div class="location-info" id="kontakt">
+
+        <!-- Adresse -->
+        <div class="info-card fade-up">
+          <div class="info-card-icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <h3>Adresse</h3>
+            <address>
+              <strong>KAYA Döner</strong><br>
+              Rote Wiese 2<br>
+              97267 Himmelstadt
+            </address>
+            <a href="https://www.google.com/maps/search/?api=1&query=Rote+Wiese+2,+97267+Himmelstadt"
+               target="_blank" rel="noopener noreferrer"
+               class="btn btn-outline-green btn-sm"
+               style="margin-top:1rem; display:inline-flex;"
+               aria-label="Route zu KAYA Döner in Google Maps öffnen">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+              Route starten
+            </a>
+          </div>
+        </div>
+
+        <!-- Telefon -->
+        <div class="info-card fade-up">
+          <div class="info-card-icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .84h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          </div>
+          <div>
+            <h3>Telefon</h3>
+            <a href="tel:+4915901254030" class="phone-link" aria-label="KAYA Döner anrufen: 01590 1254030">
+              01590 1254030
+            </a>
+          </div>
+        </div>
+
+        <!-- Öffnungszeiten -->
+        <div class="info-card fade-up">
+          <div class="info-card-icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div>
+            <h3>Öffnungszeiten</h3>
+            <table class="hours-table" aria-label="Öffnungszeiten KAYA Döner Himmelstadt">
+              <tbody>
+                <tr data-day="1"><th scope="row">Montag</th><td>11:00 – 22:00 Uhr</td></tr>
+                <tr data-day="2"><th scope="row">Dienstag</th><td>11:00 – 22:00 Uhr</td></tr>
+                <tr data-day="3"><th scope="row">Mittwoch</th><td>11:00 – 22:00 Uhr</td></tr>
+                <tr data-day="4"><th scope="row">Donnerstag</th><td>11:00 – 22:00 Uhr</td></tr>
+                <tr data-day="5"><th scope="row">Freitag</th><td>11:00 – 22:00 Uhr</td></tr>
+                <tr data-day="6"><th scope="row">Samstag</th><td><span class="placeholder-text">[ÖFFNUNGSZEITEN ERGÄNZEN]</span></td></tr>
+                <tr data-day="0"><th scope="row">Sonntag</th><td><span class="placeholder-text">[ÖFFNUNGSZEITEN ERGÄNZEN]</span></td></tr>
+              </tbody>
+            </table>
+            <p class="hours-note">* Öffnungszeiten können an Feiertagen abweichen.</p>
+          </div>
+        </div>
+
+        <!-- Extras -->
+        <div class="info-card info-extras fade-up">
+          <div class="extra-item"><span aria-hidden="true">🅿️</span> Kostenlose Parkplätze direkt vor der Tür</div>
+          <div class="extra-item"><span aria-hidden="true">♿</span> Barrierefreier Zugang – ebenerdig</div>
+          <div class="extra-item"><span aria-hidden="true">🪑</span> Innen- und Außenbereich vorhanden</div>
+          <div class="extra-item"><span aria-hidden="true">🥡</span> Abholung / To-go möglich</div>
+        </div>
+
+      </div>
+
+      <!-- Karte -->
+      <div class="map-wrapper fade-up">
+        <div id="map-gate" class="map-gate">
+          <div class="map-gate-inner">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <p>Diese Karte wird von <strong>Google Maps</strong> bereitgestellt.<br>Beim Laden werden Daten an Google LLC, USA, übertragen.</p>
+            <button id="load-map" class="btn btn-outline-green">Google Maps laden</button>
+            <a href="datenschutz.html" class="text-link">Datenschutzerklärung lesen</a>
+          </div>
+        </div>
+        <div id="map-frame" class="map-frame" hidden aria-label="Interaktive Karte – Standort KAYA Döner Himmelstadt"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ════════════════════════════════════
+     FOOTER
+════════════════════════════════════ -->
+<footer role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <img
+          src="Logo/Screenshot%202026-04-14%20000011.png"
+          alt="KAYA Döner"
+          width="120" height="40"
+          loading="lazy">
+        <p>Frischer Döner in Himmelstadt.<br>Täglich frisch zubereitet.</p>
+        <address>
+          Rote Wiese 2<br>
+          97267 Himmelstadt
+        </address>
+        <a href="tel:+4915901254030" class="footer-phone">01590 1254030</a>
+      </div>
+
+      <nav aria-label="Footer-Navigation">
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="#start">Start</a></li>
+          <li><a href="#speisekarte">Speisekarte</a></li>
+          <li><a href="#angebote">Angebote</a></li>
+          <li><a href="#ueber-uns">Über uns</a></li>
+          <li><a href="#standort">Standort</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-legal-col">
+        <h3>Öffnungszeiten</h3>
+        <p>Mo – Fr: 11:00 – 22:00 Uhr</p>
+        <p>Sa: <span class="placeholder-text">[ERGÄNZEN]</span></p>
+        <p>So: <span class="placeholder-text">[ERGÄNZEN]</span></p>
+        <h3>Rechtliches</h3>
+        <ul>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+          <li><button id="cookie-settings-btn" class="footer-text-btn">Cookie-Einstellungen</button></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 KAYA Döner Himmelstadt. Alle Rechte vorbehalten.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
