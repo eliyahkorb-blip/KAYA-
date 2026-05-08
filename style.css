@@ -10,6 +10,7 @@
 html { scroll-behavior: smooth; scroll-padding-top: var(--nav-h); -webkit-text-size-adjust: 100%; }
 body { background: var(--bg); color: var(--text); font-family: var(--font); font-size: 1rem; line-height: 1.65; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; overflow-x: hidden; }
 img { display: block; max-width: 100%; height: auto; }
+.about-img-main img, .about-img-sm img { max-width: none; height: 100%; }
 a { color: inherit; text-decoration: none; }
 ul, ol { list-style: none; }
 address { font-style: normal; }
@@ -93,6 +94,82 @@ p { text-wrap: pretty; }
 /* Header CTAs (on dark bg) */
 .btn-cta-header { background: var(--red); color: #fff; border: 2px solid var(--red); }
 .btn-cta-header:hover { background: var(--red-dark); border-color: var(--red-dark); }
+
+/* ── Accessibility Widget ──────────────────────────────────── */
+.a11y-widget {
+  position: fixed;
+  left: 0.875rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1050;
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+.a11y-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--bg-dark);
+  color: rgba(240,235,227,0.72);
+  border: 1.5px solid rgba(255,255,255,0.16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  cursor: pointer;
+  transition: background var(--t), color var(--t), border-color var(--t), box-shadow var(--t);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.32);
+  flex-shrink: 0;
+  line-height: 1;
+}
+.a11y-btn:hover {
+  color: var(--text-on-dark);
+  border-color: rgba(255,255,255,0.38);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.42);
+}
+.a11y-btn[aria-pressed="true"] {
+  background: var(--red);
+  color: #fff;
+  border-color: var(--red);
+  box-shadow: 0 4px 14px rgba(194,54,42,0.45);
+}
+.a11y-btn:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; border-radius: 50%; }
+
+@media (max-width: 640px) {
+  .a11y-widget { left: 0.5rem; }
+  .a11y-btn { width: 36px; height: 36px; font-size: 0.75rem; }
+}
+
+/* Hochkontrast-Modus */
+html.hc {
+  --bg:        #ffffff;
+  --bg-alt:    #efefef;
+  --bg-card:   #ffffff;
+  --text:      #000000;
+  --text-muted:  #111111;
+  --text-subtle: #2a2a2a;
+  --border:    rgba(0,0,0,0.28);
+  --border-md: rgba(0,0,0,0.5);
+  --red:       #a81e13;
+  --red-dark:  #861810;
+  --red-light: rgba(168,30,19,0.12);
+  --green:     #004d00;
+  --green-lt:  rgba(0,77,0,0.13);
+}
+html.hc .s-hero {
+  background-image: linear-gradient(105deg, #ffffff 0%, rgba(255,255,255,0.98) 40%, rgba(255,248,235,0.85) 100%);
+}
+html.hc .tab:not(.active) { background: #e4e4e4; color: #000; border-color: rgba(0,0,0,0.22); }
+html.hc .review-card,
+html.hc .deal-card,
+html.hc .info-card { border-color: rgba(0,0,0,0.22); }
+
+/* Schriftgrössen-Stufen (skaliert alle rem-Angaben) */
+html.fs-lg { font-size: 18px; }
+html.fs-xl { font-size: 20px; }
 
 /* ── Cookie Banner ─────────────────────────────────────────── */
 .cookie-banner { position: fixed; left: 0; right: 0; bottom: 0; z-index: 1100; background: var(--bg-dark); border-top: 1px solid rgba(255,255,255,0.1); padding: 1rem var(--px); }
@@ -250,11 +327,11 @@ p { text-wrap: pretty; }
 @media (min-width: 860px) { .about-grid { grid-template-columns: 1fr 1fr; gap: 4rem; } }
 
 .about-imgs { display: flex; flex-direction: column; gap: 0.75rem; }
-.about-img-main { aspect-ratio: 16/10; border-radius: var(--r); overflow: hidden; border: 1.5px solid var(--border); background: #f2ebe0; }
+.about-img-main { aspect-ratio: 16/10; border-radius: var(--r); overflow: hidden; border: 1.5px solid var(--border); background: #f2ebe0; position: relative; }
 .about-img-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
-.about-img-sm { aspect-ratio: 4/3; border-radius: var(--r); overflow: hidden; border: 1.5px solid var(--border); background: #eee5d5; }
+.about-img-sm { aspect-ratio: 4/3; border-radius: var(--r); overflow: hidden; border: 1.5px solid var(--border); background: #eee5d5; position: relative; }
 .about-img-main img,
-.about-img-sm img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.about-img-sm img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
 
 .about-text h2 { font-size: clamp(1.75rem, 3.5vw, 2.5rem); margin-bottom: 1.125rem; }
 .about-text > p { color: var(--text-muted); font-size: 1.0625rem; line-height: 1.75; margin-bottom: 2rem; }
