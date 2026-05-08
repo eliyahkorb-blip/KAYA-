@@ -102,6 +102,10 @@ p { text-wrap: pretty; }
 .cookie-actions { display: flex; gap: 0.5rem; }
 .cookie-actions .btn { flex: 1; }
 .btn-ghost-dark-inv { background: transparent; color: var(--text-on-dark); border: 1.5px solid rgba(255,255,255,0.25); padding: 0.5rem 1rem; font-size: 0.875rem; min-height: 40px; border-radius: var(--r-full); font-weight: 600; cursor: pointer; }
+/* Reject-Button auf dunklem Cookie-Banner-Hintergrund lesbar machen */
+.cookie-banner .btn-ghost-dark { color: rgba(240,235,227,0.85); border-color: rgba(255,255,255,0.3); }
+.cookie-banner .btn-ghost-dark:hover { color: var(--text-on-dark); border-color: rgba(255,255,255,0.6); background: rgba(255,255,255,0.07); }
+
 @media (min-width: 640px) {
   .cookie-inner { flex-direction: row; align-items: center; gap: 1.5rem; }
   .cookie-inner p { flex: 1; }
@@ -181,7 +185,8 @@ p { text-wrap: pretty; }
 .hero-actions .btn { min-height: 52px; font-size: 1rem; }
 
 .hero-trust { display: flex; flex-wrap: wrap; gap: 0.375rem 1.25rem; font-size: 0.875rem; color: var(--text-muted); }
-.tick { color: var(--green); font-weight: 700; margin-right: 0.2rem; }
+.hero-trust li { display: inline-flex; align-items: center; gap: 0.3rem; }
+.tick { color: var(--green); font-weight: 700; flex-shrink: 0; line-height: 1; }
 
 /* ── Infobar ───────────────────────────────────────────────── */
 .s-infobar { background: var(--bg-dark); border-top: 1px solid rgba(255,255,255,0.06); padding: 0.875rem 0; }
@@ -253,7 +258,7 @@ p { text-wrap: pretty; }
 .about-text > p { color: var(--text-muted); font-size: 1.0625rem; line-height: 1.75; margin-bottom: 2rem; }
 .about-points { display: flex; flex-direction: column; gap: 1rem; margin-bottom: 2rem; }
 .about-points li { display: flex; gap: 0.875rem; align-items: flex-start; }
-.ap-icon { width: 22px; height: 22px; border-radius: 50%; background: var(--red-light); color: var(--red); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.75rem; flex-shrink: 0; margin-top: 0.175rem; }
+.ap-icon { width: 22px; height: 22px; border-radius: 50%; background: var(--red-light); color: var(--red); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.75rem; flex-shrink: 0; margin-top: 0.1rem; }
 .about-points strong { display: block; font-size: 0.9375rem; font-weight: 700; color: var(--text); margin-bottom: 0.2rem; }
 .about-points span { display: block; font-size: 0.875rem; color: var(--text-muted); line-height: 1.55; }
 .about-actions { display: flex; flex-wrap: wrap; gap: 0.625rem; }
@@ -299,6 +304,7 @@ p { text-wrap: pretty; }
 
 .extras-grid { display: flex; flex-direction: column; gap: 0.75rem; }
 .extra-item { display: flex; align-items: center; gap: 0.625rem; font-size: 0.9375rem; color: var(--text-muted); }
+.extra-item > span { flex-shrink: 0; min-width: 1.625em; text-align: center; line-height: 1; }
 
 .map-wrapper { border-radius: var(--r); overflow: hidden; border: 1.5px solid var(--border); aspect-ratio: 4/3; background: var(--bg-alt); position: relative; box-shadow: var(--shadow); }
 .map-gate, .map-frame { position: absolute; inset: 0; }
@@ -348,8 +354,47 @@ footer[role="contentinfo"] .footer-bottom p { font-size: 0.8125rem; color: rgba(
   .section-head { margin-bottom: 2rem; }
   .mi { flex-direction: column; align-items: flex-start; gap: 0.375rem; }
   .mi-p { text-align: left; align-items: flex-start; flex-direction: row; flex-wrap: wrap; gap: 0.25rem 0.5rem; }
+
+  /* Tab-Buttons auf Mobile etwas kompakter */
+  .tab { font-size: 0.8125rem; padding: 0.45rem 0.875rem; min-height: 38px; }
+
+  /* Map-Karte auf Mobile weniger hoch */
+  .map-wrapper { aspect-ratio: 4/3; }
+
+  /* Info-Cards auf Mobile: Icon und Text nebeneinander optimal */
+  .info-card { padding: 1.125rem 1.125rem; }
+  .ic-icon { width: 32px; height: 32px; }
+
+  /* Deal-Cards auf Mobile: Abstände reduzieren */
+  .deal-card { padding: 1.5rem 1.25rem; }
+
+  /* Review-Cards */
+  .review-card { padding: 1.375rem 1.25rem; }
+
+  /* About-Grid: Bilder auf Mobile ausblenden (keine echten Bilder vorhanden) */
+  .about-imgs { display: none; }
+
+  /* Footer auf Mobile */
+  .footer-grid { gap: 1.5rem; }
+
+  /* Hero Trust-Liste: engere Lücken auf Mobile */
+  .hero-trust { gap: 0.375rem 1rem; }
+
+  /* Cookie-Banner: Buttons auf sehr kleinen Screens stapeln */
+  .cookie-actions { flex-direction: column; }
+  .cookie-actions .btn { width: 100%; }
+}
+
+@media (min-width: 400px) and (max-width: 640px) {
+  /* Nur zwischen 400–640px: Cookie-Buttons wieder nebeneinander */
+  .cookie-actions { flex-direction: row; }
+  .cookie-actions .btn { width: auto; flex: 1; }
 }
 
 @media (max-width: 400px) {
   :root { --px: 1rem; }
+  .s-hero h1 { font-size: 2.125rem; }
+  .hero-actions .btn { max-width: 100%; }
+  /* Nav-Logo auf sehr kleinen Screens */
+  .lw-a, .lw-b { font-size: 1.1rem; }
 }
