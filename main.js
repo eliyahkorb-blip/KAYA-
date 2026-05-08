@@ -169,4 +169,43 @@
   } else {
     fadeEls.forEach(function (el) { el.classList.add('visible'); });
   }
+
+  /* Barrierefreiheits-Widget */
+  (function () {
+    var FONT_KEY     = 'kaya_font';
+    var CONTRAST_KEY = 'kaya_contrast';
+    var fontSteps    = ['', 'fs-lg', 'fs-xl'];
+    var fontBtn      = document.getElementById('a11y-font-btn');
+    var contrastBtn  = document.getElementById('a11y-contrast-btn');
+    if (!fontBtn || !contrastBtn) return;
+
+    var curFont     = parseInt(localStorage.getItem(FONT_KEY) || '0', 10);
+    if (curFont < 0 || curFont >= fontSteps.length) curFont = 0;
+    var curContrast = localStorage.getItem(CONTRAST_KEY) === '1';
+
+    function applyFont(step) {
+      document.documentElement.classList.remove('fs-lg', 'fs-xl');
+      if (fontSteps[step]) document.documentElement.classList.add(fontSteps[step]);
+      fontBtn.setAttribute('aria-pressed', step !== 0 ? 'true' : 'false');
+    }
+    function applyContrast(on) {
+      document.documentElement.classList.toggle('hc', on);
+      contrastBtn.setAttribute('aria-pressed', on ? 'true' : 'false');
+    }
+
+    applyFont(curFont);
+    applyContrast(curContrast);
+
+    fontBtn.addEventListener('click', function () {
+      curFont = (curFont + 1) % fontSteps.length;
+      applyFont(curFont);
+      try { localStorage.setItem(FONT_KEY, String(curFont)); } catch (e) {}
+    });
+
+    contrastBtn.addEventListener('click', function () {
+      curContrast = !curContrast;
+      applyContrast(curContrast);
+      try { localStorage.setItem(CONTRAST_KEY, curContrast ? '1' : '0'); } catch (e) {}
+    });
+  })();
 })();
