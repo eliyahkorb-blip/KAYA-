@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://[DOMAIN-ERGÄNZEN]/</loc>
+    <loc>https://FINAL-DOMAIN.DE/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://[DOMAIN-ERGÄNZEN]/impressum.html</loc>
+    <loc>https://FINAL-DOMAIN.DE/impressum.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://[DOMAIN-ERGÄNZEN]/datenschutz.html</loc>
+    <loc>https://FINAL-DOMAIN.DE/datenschutz.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>

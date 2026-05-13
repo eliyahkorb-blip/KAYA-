@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://[DOMAIN-ERGÄNZEN]/sitemap.xml
+Sitemap: https://FINAL-DOMAIN.DE/sitemap.xml
