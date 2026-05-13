@@ -302,6 +302,7 @@ html.fs-xl { font-size: 20px; }
   border: none !important;
   box-shadow: none !important;
   border-radius: 0 !important;
+  mix-blend-mode: multiply;
   filter: drop-shadow(0 24px 45px rgba(0, 0, 0, 0.18));
   transform: translateY(8px);
 }
